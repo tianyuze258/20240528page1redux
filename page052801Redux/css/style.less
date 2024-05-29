@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Source Han Sans CN, Source Han Sans CN;
+    font-weight: 400;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #F5F5F8;
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 27px;
+    }
+}
+
+a {
+    /* 初始化a标签 */
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    /* 清除按钮元素自带样式 */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* 背景图 */
+.topBackgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* 背景图 */
+
+/* 题头套餐 */
+.topTitleBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.topTitle {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+    padding-block: 1rem;
+}
+
+/* 题头套餐 */
+
+/* 拼团价 */
+.priceBox {
+    display: flex;
+    flex-direction: column; //更换主轴
+    align-items: center; //未更换主轴时为上下对称
+    justify-content: center; //未更换主轴时为左右对称    
+
+    width: 100vw;
+
+
+    position: relative;
+    top: 9rem;
+}
+
+.priceBoxMain {
+    display: flex;
+    // flex-direction: column;    //更换主轴
+    align-items: baseline;
+    justify-content: center;
+
+    width: 100vw;
+
+    position: relative;
+
+    // top: 1rem;
+
+}
+
+.priceBoxMainPrice {
+    position: relative;
+    left: -5rem;
+    font-weight: normal;
+    font-size: 4.6rem;
+    color: white;
+}
+
+.priceBoxMainRedBox {
+    position: relative;
+    left: -4rem;
+    display: inline;
+    background-color: red;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    color: white;
+}
+
+.priceBoxMainPriceOriginal {
+    position: relative;
+    left: -3rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.priceBoxTip {
+    font-size: 1.2rem;
+    color: #647382;
+    position: relative;
+    left: -1rem;
+}
+
+/* 拼团价 */
+
+
+/* 汽车信息 */
+.flyBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-inline: 5vw;
+
+    width: auto;
+    height: 10rem;
+
+    background-color: white;
+
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.6rem 0.1rem rgba(0, 0, 0, 0.05);
+
+    position: relative;
+    top: 12rem;
+}
+
+.flyBoxImgBox {
+    display: inline-flex;
+    padding-inline: 1.5rem;
+}
+
+.flyBoxTextBox {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.flyBoxTextBoxLicense {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.flyBoxTextBoxModel {
+    font-size: 1.2rem;
+}
+
+.flyBoxArrow {
+    flex-grow: 1;
+    font-size: 2.5rem;
+}
+
+/* 汽车信息 */
+
+/* 所需油品 */
+.requiredOil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    
+
+    width: auto;
+    height: 26rem;
+
+    background-color: white;
+
+    border-radius: 1rem;
+
+    position: relative;
+    top: 13rem;
+}
+.requiredOilTitle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    padding-block: 1.5rem;
+    padding-inline-start: 5%;
+
+    width: 100vw;
+
+    font-size: 1.4rem;
+
+}
+.partingLine{ /* 这是分割线 */
+    width: 90%;
+    height: 0;
+
+    border-bottom: 1px solid #eeeef3;
+}
+.requiredOilMain{
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    
+    padding-inline-start: 5%;
+    padding-block: 1.5rem;
+
+    justify-content: left;
+    align-items: center;
+}
+
+.requiredOilMainBox{
+    display: flex;
+    flex-direction: column;
+
+    padding-inline-start: 1rem;
+
+    .requiredOilMainBoxTop{
+        display: flex;
+        flex-direction: row;
+
+        .requiredOilMainBoxTopRedBox{
+            display: inline;
+            background-color: red;
+            border-radius: 0.3rem;
+            padding: 0.3rem;
+
+            font-weight: bold;
+            font-size: 1rem;
+            color: white;
+        }
+        .requiredOilMainBoxTopTitle{
+            font-size: 1.6rem;
+            font-weight: bold;
+
+            padding-inline-start: 1rem;
+        }
+        .requiredOilMainBoxTopTitleForNoBold{
+            font-size: 1.6rem;
+
+        }
+    }
+    .requiredOilMainBoxBottom{
+        display: flex;
+        flex-direction: row;
+
+        font-size: 1.2rem;
+        color: #647382;
+
+        padding-block-start: 1rem;
+
+        .requiredOilMainBoxBottomLeft{
+            display: flex;
+            flex-direction: column;
+
+            padding-inline-end: 1rem;
+            
+            line-height: 2rem;
+        }
+        .requiredOilMainBoxBottomRight{
+            display: flex;
+            flex-direction: column;
+
+            line-height: 2rem;
+        }
+    }
+
+    .freebieBox{
+        display: inline;
+        border-radius: 0.3rem;
+        border: 1px solid #c1c9da;
+
+        font-size: 0.9rem;
+        color: #fe4d48;
+
+        padding: 0.2rem;
+    }
+}
+
+/* 所需油品 */
+
+/* 种类 */
+.kindsBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 5rem;
+
+    position: relative;
+    top: 13rem;
+
+    // border: 1px solid black;
+    .kind{
+
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+
+        font-size: 1.4rem;
+
+        margin-inline: 1rem;
+
+        width: 7rem;
+        height: 3rem;
+
+        // border: 1px solid black;
+        border-radius: 0.6rem;
+    }
+}
+/* 种类 */
+
+/* 品牌 */
+.brandsBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 13rem;
+
+    width: 100vw;
+    height: 20rem;
+    // border: 1px solid black;
+
+    .radioButtonBox{
+        padding-inline: 1rem;
+    }
+    .brandImg{
+        padding-inline-end: 1.5rem;
+    }
+    .brand{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        width: 100vw;
+        height: 9rem;
+        
+        margin-block-end: 1rem;
+
+        // border: 1px solid black;
+        border-radius: 1rem;
+
+        background-color: white;
+    }
+    .brandMain{
+        display: flex;
+        flex-direction: column;
+
+        width: 20rem;
+
+        .brandTitle{
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+        .brandText{
+            font-size: 1.2rem;
+            color: #647382;
+
+            line-height: 2rem;
+        }
+    }
+    .brandDetail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            font-size: 1.5rem;
+            color: #647382;
+        }
+        .brandDetailArrow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            font-size: 2rem;
+
+            padding-inline-start: 1rem;
+        }
+    }
+}
+
+/* 品牌 */
+
+/* 收银台 */
+.cashBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: 13rem;
+
+    width: 100vw;
+    height: 6rem;
+
+    background-color: white;
+
+    // border: 1px solid black;
+    .sumBox{
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sumBoxText{
+            font-size: 1.2rem;
+            color: #647382;
+        }
+        .sumBoxTextNumber{
+            font-size: 2rem;
+            color: #fe4d48;
+        }
+    }
+    .paymentButtonBox{
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+.paymentButton{
+    font-size: 1.6rem;
+    color: white;
+
+    width: 18rem;
+    height: 5rem;
+    background-color: #4883f1;
+
+    border-radius: 2.5rem;
+
+
+
+}
+/* 收银台 */
