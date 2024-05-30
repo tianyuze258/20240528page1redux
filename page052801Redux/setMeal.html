@@ -50,12 +50,10 @@
                 <div class="requiredOilMainBoxBottom">
                     <div class="requiredOilMainBoxBottomLeft">
                         <span>种类：全合成机油</span>
-                        
                         <span>粘度：5W-40</span>
                     </div>
                     <div class="requiredOilMainBoxBottomRight">
                         <span>建议更换周期：1万公里</span>
-                        
                         <span>用油量：4L</span>
                     </div>
                 </div>
@@ -70,9 +68,11 @@
                 </div>
                 <div class="requiredOilMainBoxBottom">
                     <div class="requiredOilMainBoxBottomLeft">
-                        <span>价格：99.00元</span>
-                        
-                        <div><div class="freebieBox">赠品</div></div>
+                        <span>价格：<span class="spanLine">99.00元</span></span>
+
+                        <div>
+                            <div class="freebieBox">赠品</div>
+                        </div>
                     </div>
                     <div class="requiredOilMainBoxBottomRight">
 
@@ -85,44 +85,137 @@
 
     <!-- 种类 -->
     <div class="kindsBox">
-        <div class="kind">机滤</div>
-        <div class="kind">空滤</div>
-        <div class="kind">油滤</div>
-        <div class="kind">空调滤</div>
+        <button class="kind buttonActive" id="button1"
+            onclick="toggleContent('section1');buttonContent('button1')">机滤</button>
+        <button class="kind" id="button2" onclick="toggleContent('section2');buttonContent('button2')">空滤</button>
+        <button class="kind" id="button3" onclick="toggleContent('section3');buttonContent('button3')">油滤</button>
+        <button class="kind" id="button4" onclick="toggleContent('section4');buttonContent('button4')">空调滤</button>
     </div>
     <!-- 种类 -->
 
     <!-- 品牌 -->
-    <div class="brandsBox">
-        <div class="brand">
-            <div class="radioButtonBox">
-                <input type="radio" id="brand1" name="brand" value="brand1" checked>
+    <form id="myForm">
+        <div class="section brandsBox" id="section1">
+            <div class="brand">
+                <div class="radioButtonBox">
+                    <div class="radio-sex"><input type="radio" id="brand1" name="brand" value="100"><label for="brand1"></label></div>
+                </div>
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌111</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
             </div>
-            <div class="brandImg"><img src="img\workShop.png" alt=""></div>
-            <div class="brandMain">
-                <div class="brandTitle">品牌名称</div>
-                <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand2" name="brand" value="200"><label for="brand2"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌111</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
             </div>
-            <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
         </div>
-        <div class="brand">
-            <div class="radioButtonBox">
-                <input type="radio" id="brand2" name="brand" value="brand2">
+        <div class="section" id="section2">
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand3" name="brand" value="300"><label for="brand3"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌222</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
             </div>
-            <div class="brandImg"><img src="img\workShop.png" alt=""></div>
-            <div class="brandMain">
-                <div class="brandTitle">品牌名称</div>
-                <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand4" name="brand" value="400"><label for="brand4"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌222</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
             </div>
-            <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
         </div>
-    </div>
+        <div class="section" id="section3">
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand5" name="brand" value="500"><label for="brand5"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌333</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
+            </div>
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand6" name="brand" value="600"><label for="brand6"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌333</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand7" name="brand" value="700"><label for="brand7"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌444</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
+            </div>
+            <div class="brand">
+                
+                    <div class="radioButtonBox">
+                        <div class="radio-sex"><input type="radio" id="brand8" name="brand" value="800"><label for="brand8"></label></div>
+                    </div>
+                
+                <div class="brandImg"><img src="img\workShop.png" alt=""></div>
+                <div class="brandMain">
+                    <div class="brandTitle">品牌444</div>
+                    <div class="brandText">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</div>
+                </div>
+                <div class="brandDetail"><a href="#">详情</a><span class="brandDetailArrow">></span></div>
+            </div>
+        </div>
+    </form>
     <!-- 品牌 -->
 
     <!-- 收银台 -->
     <div class="cashBox">
         <div class="sumBox">
-            <span class="sumBoxText">合计<span class="sumBoxTextNumber">1760.00</span>元</span>
+            <span class="sumBoxText">合计
+                <span class="sumBoxTextNumber" id="price">0</span>
+                <span class="sumBoxTextNumber">.00</span>
+                元
+            </span>
         </div>
         <div class="paymentButtonBox">
             <button class="paymentButton">发起拼团</button>
